@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "cooked-egg-mod",
+	"version": "1.0",
+	"name": "Cooked Egg",
+	"description": "Allows you to cook your surplus of eggs in a furnace, smoker, or even on an open fire!",
+	"authors": [
+		"NatureGamr"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cooked-egg-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"github.gamersupreme1.cookedeggmod.CookedEgg"
+		],
+		"client": [
+			"github.gamersupreme1.cookedeggmod.CookedEggClient"
+		],
+		"fabric-datagen": [
+			"github.gamersupreme1.cookedeggmod.CookedEggDataGenerator"
+		]
+	},
+	"mixins": [
+		"cooked-egg-mod.mixins.json",
+		{
+			"config": "cooked-egg-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

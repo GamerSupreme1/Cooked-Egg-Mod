@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "minecraft:egg"
+  },
+  "result": {
+    "id": "cooked-egg-mod:cooked_egg"
+  }
+}
